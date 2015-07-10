@@ -143,7 +143,7 @@
 
     <hbase.version>0.98.4-hadoop2</hbase.version>
     <accumulo.version>1.6.1</accumulo.version>
-    <tajo.version>0.9.1-SNAPSHOT</tajo.version>
+    <tajo.version>0.10.1</tajo.version>
     
     <!--
      artifact versions

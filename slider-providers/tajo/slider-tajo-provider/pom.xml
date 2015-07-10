@@ -7,18 +7,18 @@
 	<description>
 	</description>
 
-	<parent>
-		<groupId>org.apache.slider</groupId>
-		<artifactId>slider</artifactId>
-		<version>0.61-incubating</version>
-		<relativePath>../../../</relativePath>
-	</parent>
+  <parent>
+    <groupId>org.apache.slider</groupId>
+    <artifactId>slider</artifactId>
+    <version>0.60.0-incubating</version>
+    <relativePath>../../../</relativePath>
+  </parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<hadoop.version>2.6.0-SNAPSHOT</hadoop.version>
-		<tajo.version>0.9.1-SNAPSHOT</tajo.version>
-		<slider.version>0.6.0-incubating</slider.version>
+		<!--<hadoop.version>2.6.0-SNAPSHOT</hadoop.version>-->
+		<!--<tajo.version>0.9.1-SNAPSHOT</tajo.version>-->
+		<!--<slider.version>0.6.0-incubating</slider.version>-->
 		<apache-rat-plugin.version>0.10</apache-rat-plugin.version>
 	</properties>
 
@@ -153,23 +153,23 @@
 			<version>${tajo.version}</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.apache.hadoop</groupId>
-			<artifactId>hadoop-common</artifactId>
-			<version>${hadoop.version}</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.hadoop</groupId>-->
+			<!--<artifactId>hadoop-common</artifactId>-->
+			<!--<version>${hadoop.version}</version>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.hadoop</groupId>
-			<artifactId>hadoop-hdfs</artifactId>
-			<version>${hadoop.version}</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.hadoop</groupId>-->
+			<!--<artifactId>hadoop-hdfs</artifactId>-->
+			<!--<version>${hadoop.version}</version>-->
+		<!--</dependency>-->
 
-		<dependency>
-			<groupId>org.apache.hadoop</groupId>
-			<artifactId>hadoop-common</artifactId>
-			<version>${hadoop.version}</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.apache.hadoop</groupId>-->
+			<!--<artifactId>hadoop-common</artifactId>-->
+			<!--<version>${hadoop.version}</version>-->
+		<!--</dependency>-->
 	</dependencies>
 
 	<profiles>
