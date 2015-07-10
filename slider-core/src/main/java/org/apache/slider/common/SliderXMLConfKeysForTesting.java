@@ -29,6 +29,9 @@ public interface SliderXMLConfKeysForTesting {
   String KEY_TEST_ACCUMULO_HOME = "slider.test.accumulo.home";
   String KEY_TEST_ACCUMULO_TAR = "slider.test.accumulo.tar";
   String KEY_TEST_ACCUMULO_APPCONF = "slider.test.accumulo.appconf";
+  String KEY_TEST_TAJO_HOME = "slider.test.accumulo.home";
+  String KEY_TEST_TAJO_TAR = "slider.test.accumulo.tar";
+  String KEY_TEST_TAJO_APPCONF = "slider.test.accumulo.appconf";
 
   String KEY_TEST_THAW_WAIT_TIME = "slider.test.thaw.wait.seconds";
 
@@ -50,6 +53,8 @@ public interface SliderXMLConfKeysForTesting {
   String KEY_TEST_HBASE_ENABLED = "slider.test.hbase.enabled";
 
   String KEY_TEST_ACCUMULO_ENABLED = "slider.test.accumulo.enabled";
+
+  String KEY_TEST_TAJO_ENABLED = "slider.test.tajo.enabled";
 
   String KEY_ACCUMULO_LAUNCH_TIME =
     "slider.test.accumulo.launch.wait.seconds";

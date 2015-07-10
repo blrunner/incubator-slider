@@ -1,0 +1,43 @@
+{
+  "schema": "http://example.org/specification/v2.0.0",
+  "metadata": {
+  },
+
+  "global": {
+    "application.def": ".slider/package/tajo/slider-tajo-app-package-${pkg.version}.zip",
+    "java_home": "${JAVA_HOME}",
+    "system_configs": "core-site",
+
+    "site.global.app_user": "yarn",
+    "site.global.app_root": "${AGENT_WORK_ROOT}/app/install/tajo-${pkg.version}",
+    "site.global.tajo_version" : "${pkg.version}",
+
+    "site.global.ganglia_server_host": "${NN_HOST}",
+    "site.global.ganglia_server_port": "8667",
+    "site.global.ganglia_server_id": "Application1",
+    "site.global.ganglia_enabled":"true",
+
+    "site.tajo-env.tajo_master_heapsize": "1024m",
+    "site.tajo-env.tajo_worker_heapsize": "1024m",
+
+    "site.tajo-site.tajo.rootdir": "${DEFAULT_DATA_DIR}",
+    "site.tajo-site.tajo.username": "${USER_NAME}",
+
+    "site.tajo-site.tajo.master.umbilical-rpc.address": "${NN_HOST}:26001",
+    "site.tajo-site.tajo.master.client-rpc.address": "${NN_HOST}:26002",
+    "site.tajo-site.tajo.resource-tracker.rpc.address": "${NN_HOST}:26003",
+    "site.tajo-site.tajo.catalog.client-rpc.address": "${NN_HOST}:26005",
+
+    "site.tajo-site.tajo.worker.peer-rpc.address": "0.0.0.0:0",
+    "site.tajo-site.tajo.worker.client-rpc.address": "0.0.0.0:0",
+    "site.tajo-site.tajo.worker.info-http.address": "0.0.0.0:0",
+    "site.tajo-site.tajo.worker.qm-rpc.address": "0.0.0.0:0",
+    "site.tajo-site.tajo.worker.tmpdir.locations": "${AGENT_WORK_ROOT}/work/tmpdir"
+  },
+
+  "components": {
+    "slider-appmaster": {
+      "jvm.heapsize": "1024M"
+    }
+  }
+}

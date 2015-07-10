@@ -44,6 +44,8 @@
     <module>slider-providers/hbase/hbase-funtests</module>
     <module>slider-providers/accumulo/slider-accumulo-provider</module>
     <module>slider-providers/accumulo/accumulo-funtests</module>
+    <module>slider-providers/tajo/slider-tajo-provider</module>
+    <module>slider-providers/tajo/tajo-funtests</module>
   </modules>
 
   <licenses>
@@ -141,6 +143,7 @@
 
     <hbase.version>0.98.4-hadoop2</hbase.version>
     <accumulo.version>1.6.1</accumulo.version>
+    <tajo.version>0.9.1-SNAPSHOT</tajo.version>
     
     <!--
      artifact versions
@@ -1021,6 +1024,75 @@
         <version>${accumulo.version}</version>
       </dependency>
 
+      <!-- ======================================================== -->
+      <!-- Tajo -->
+      <!-- ======================================================== -->
+
+      <dependency>
+        <groupId>org.apache.slider</groupId>
+        <artifactId>slider-tajo-provider</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.slider</groupId>
+        <artifactId>tajo-funtests</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.tajo</groupId>
+        <artifactId>tajo-common</artifactId>
+        <version>${tajo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.tajo</groupId>
+        <artifactId>tajo-core</artifactId>
+        <version>${tajo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.tajo</groupId>
+        <artifactId>tajo-storage</artifactId>
+        <version>${tajo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.tajo</groupId>
+        <artifactId>tajo-yarn-pullserver</artifactId>
+        <version>${tajo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.tajo</groupId>
+        <artifactId>tajo-catalog-common</artifactId>
+        <version>${tajo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.tajo</groupId>
+        <artifactId>tajo-catalog-client</artifactId>
+        <version>${tajo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.tajo</groupId>
+        <artifactId>tajo-catalog-server</artifactId>
+        <version>${tajo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.tajo</groupId>
+        <artifactId>tajo-client</artifactId>
+        <version>${tajo.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.tajo</groupId>
+        <artifactId>tajo-rpc</artifactId>
+        <version>${tajo.version}</version>
+      </dependency>
 
       <!-- ======================================================== -->
       <!-- Others -->
@@ -1316,6 +1388,7 @@
         <module>app-packages/accumulo</module>
         <module>app-packages/hbase</module>
         <module>app-packages/storm</module>
+        <module>app-packages/tajo</module>
       </modules>
     </profile>
     

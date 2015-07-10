@@ -66,7 +66,9 @@
       "initLimit": "10",
       "user_group": "{{GROUP_NAME}}",
       "hbase_user": "{{USER_NAME}}",
-      "hbase_log_dir": "{{LOG_DIR}}"
+      "hbase_log_dir": "{{LOG_DIR}}",
+      "tajo_user": "{{USER_NAME}}",
+      "tajo_log_dir": "{{LOG_DIR}}"
     },
     "hdfs-site": {
       "dfs.namenode.checkpoint.period": "21600",
